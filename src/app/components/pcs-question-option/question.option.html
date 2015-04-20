@@ -1,0 +1,13 @@
+<li class="item item-checkbox pcs-center-container">
+  <label class="checkbox">
+    <input type="checkbox" ng-model="q.model">
+  </label>
+  {{q.title}}
+  <img ng-if="q.logo" ng-src="assets/images/{{q.logo}}.png" alt="{{q.title}}" class="pcs-checkbox-logo pcs-center-item"/>
+</li>
+<li ng-show="q.alreadyCustomer && q.model" class="item item-checkbox pcs-second-half-checkbox">
+  <label class="checkbox">
+    <input type="checkbox" ng-model="q.modelCustomer">
+  </label>
+  already a customer
+</li>
